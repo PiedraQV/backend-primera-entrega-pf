@@ -1,0 +1,25 @@
+<div><h4>Productos</h4></div>
+{{#if products.length}}
+<div class="row row-cols-1 row-cols-md-3 g-4" id="products">
+    {{#each products}}
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="{{this.thumbnail}}" class="card-img-top product-img" alt="{{this.title}}" />
+            <div class="card-body">
+                <h6 class="card-title">{{this.title}} - ${{this.price}} (Cantidad {{this.stock}})</h6>
+                <p class="card-text">{{this.description}}</p>
+                {{#if ../isLogged}}
+                <a href="/editar.html?id={{this.id}}" class="btn btn-primary">Editar</a>
+                <a data-id="{{this.id}}" class="btn btn-danger delete-button">Eliminar</a>
+                <br>
+                <br>
+                {{/if}}
+                <a data-id="{{this.id}}" class="btn btn-success add-button">Agregar al carrito</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{else}}
+<h6>Lo sentimos, no hay ningun producto que mostrar. Vuelva mas tarde</h6>
+{{/if}} 

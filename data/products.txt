@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Zapatos Nike",
+    "price": 50,
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since ",
+    "code": "0045",
+    "stock": 5,
+    "thumbnail": "http://localhost:8080/images/1660178444551.jpeg",
+    "id": 1,
+    "timestamp": 1660178444556
+  }
+]

@@ -1,0 +1,102 @@
+body{
+    background: rgb(237, 233, 255) !important;
+}
+
+.container{
+    width: 50% !important;
+    padding: 20px !important;
+}
+
+.contact-form{
+    background: #fff;
+    padding-bottom: 2% !important;
+    margin: 1%;
+    width: auto;
+}
+.contact-form .form-control{
+    border-radius: none;
+}
+.contact-image{
+    text-align: center;
+}
+.contact-image img{
+    border-radius: 6rem;
+    width: 11%;
+    margin-top: -3%;
+    transform: rotate(29deg);
+}
+.contact-form form{
+    padding: 2% 2% 0;
+}
+.contact-form form .row{
+    margin-bottom: -7%;
+}
+.contact-form h3{
+    margin-bottom: 8%;
+    margin-top: -10%;
+    text-align: center;
+    color: black;
+}
+.contact-form .btnContact {
+    width: 100%;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    background-color: #00419b !important;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px 30px 10px 0px;
+}
+.btnContactSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    color: #fff;
+    background-color:#00791e;
+    border: none;
+    cursor: pointer;
+}
+
+a.btnGoToProducts {
+    width: 35%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.text-brown {
+    color: #83131e;
+}
+
+.product-img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+
+.btn-green{
+   background-color: #00419b !important;
+   color: white !important;
+}
+
+.btn-info {
+   background-color: #00349b !important;
+   color: white !important;
+   margin: 10px 10px 10px 0px ;
+}
+
+.btn-secondary {
+    background-color: #0b4f68 !important;
+    color: white !important;
+    margin: 10px 10px 10px 0px ;
+}
+
+.btn-primary {
+    color: #fff !;
+    background-color:#00419b !important;
+    border-color:#00419b !important;
+}

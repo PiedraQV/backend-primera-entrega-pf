@@ -1,0 +1,19 @@
+<h4 class="m-0 mb-4">Productos en carrito</h4>
+{{#if cart.length}}
+<div class="row row-cols-1 row-cols-md-3 g-4" id="cartProducts">
+    {{#each cart}}
+    <div class="col">
+        <div class="card" style="width: 18rem;">
+            <img src="{{this.thumbnail}}" class="card-img-top product-img" alt="{{this.title}}" />
+            <div class="card-body">
+                <h5 class="card-title">{{this.title}} - ${{this.price}} (Stock {{this.stock}})</h5>
+                <p class="card-text">{{this.description}}</p>
+                <button data-id="{{this.id}}" class="btn btn-danger delete-button">Eliminar</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{else}}
+<h5>No hay ningun producto en el carrito</h5>
+{{/if}} 

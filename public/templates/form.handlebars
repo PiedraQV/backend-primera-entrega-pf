@@ -1,0 +1,44 @@
+<div class="col-md-12">
+    <div class="align-self-center">
+        <div class="mb-3">
+            <label for="title" class="form-label h6">Titulo</label>
+            <input type="text" name="title" id="title" class="form-control" placeholder="Ingresa un titulo *" {{#if
+                product}}value="{{product.title}}" {{else}} required {{/if}} />
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label h6">Precio</label>
+            <input type="number" name="price" id="price" class="form-control" placeholder="Ingresa un precio *" {{#if
+                product}}value="{{product.price}}" {{else}} required {{/if}} />
+        </div>
+        <div class="mb-3">
+            <label for="stock" class="form-label h6">Stock</label>
+            <input type="number" name="stock" id="stock" class="form-control" placeholder="Productos disponibles *" {{#if
+                product}}value="{{product.stock}}" {{else}} required {{/if}} />
+        </div>
+        <div class="mb-3">
+            <label for="code" class="form-label h6">Codigo</label>
+            <input type="text" name="code" id="code" class="form-control" placeholder="Ingresa un codigo *" {{#if
+                product}}value="{{product.code}}" {{else}} required {{/if}} />
+        </div>
+        <div class="mb-3">
+            <label for="description" class="form-label h6">Descripción</label>
+            <textarea name="description" id="description" class="form-control" cols="30" rows="3" {{#unless product}}required{{/unless}}>{{#if product}}{{product.description}}{{/if}}</textarea>
+        </div>
+    </div>
+    <div class="col-md-8">
+    <label for="thumbnail" class="form-label h6">Imagen del producto</label>
+    <input type="file" name="thumbnail" id="thumbnail" {{#unless product}}required{{/unless}} />
+    <div class="mt-2">
+        <img id="preview" class="img-thumbnail d-none" />
+        <p class="d-none h6" id="image-text">Agregado!</p>
+    </div>
+    </div>
+    <div class="mb-3">
+        <input type="submit" name="btnSubmit" class="btnContact" value="Enviar Producto" />
+        <br>
+    </div>
+        <br>
+
+</div>
+
+</div> 
